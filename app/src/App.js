@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Plot from 'react-plotly.js';
+import Sidebar from './components/Sidebar';
+// import './App.css';
 
 const App = () => {
   // Store plot data in state.
@@ -36,15 +38,20 @@ const App = () => {
   }, []);
 
   return (
-    <Plot
-      style={{ position: 'fixed', width: '100%', height: '100%', left: 0, top: 0 }}
-      data={plotData}
-      layout={{
-        title: 'Visualization',
-        yaxis: { scaleanchor: 'x' },
-        autosize: true,
-      }}
-    />
+    <div>
+      <Sidebar/>
+      
+      {/* <Plot
+        style={{ position: 'fixed', width: '80%', height: '100%', float: 'right'}}
+        data={plotData}
+        layout={{
+          title: 'Satellite Movement Visualization',
+          yaxis: { scaleanchor: 'x' },
+          autosize: true,
+          showlegend: false,
+        }}
+      /> */}
+      </div>
   );
 };
 
