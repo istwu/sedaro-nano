@@ -20,10 +20,18 @@ body {
   width: 240px;
   padding: 20px 20px;
   background-color: #151824;
+  position: fixed;
+  /* display: inline-block; */
 }
 
-h3 {
+h2, h3 {
   color: #FDBB41;
+}
+
+.Footer {
+  text-align: center;
+  color: #B3B3B3;
+  font-size: small;
 }
 
 .TraceButton {
@@ -33,4 +41,30 @@ h3 {
   background-color: #343848;
   border-radius: 6px;
   margin-bottom: 10px;
+}
+
+.Plot {
+  width: 80%;
+  height: 100%;
+  min-height: 600px;
+  margin: 20px 20px;
+  margin-left: 300px;
+  border: 10px solid;
+  border-color: #383D53;
+  float: right;
+}
+
+@media screen and (max-width: 1600) {
+  .Plot {
+    margin-left: 240px;
+  }
+}
+
+.Card {
+  background-color: #383D53;
+  background-image: linear-gradient(to bottom right, #383D53, #474b61);
+  padding: 10px 20px;
+  margin: 20px 20px;
+  margin-left: 300px;
+  float: right;
 }
